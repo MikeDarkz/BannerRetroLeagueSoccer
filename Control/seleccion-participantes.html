@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Selección de Participantes</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="container">
+
+    <section class="team team-red">
+      <h2>Equipo Rojo</h2>
+      <div id="redTeam" class="team-list"></div>
+    </section>
+
+    <section class="center-panel">
+
+      <button id="resetBtn" class="reset-btn" title="Intercambiar equipos">
+        ⇄
+      </button>
+
+      <p>Revertir opciones</p>
+
+      <h3>Lista de participantes</h3>
+
+      <div id="participants" class="participants-list"></div>
+
+      <div class="custom-box">
+        <input
+          id="customName"
+          type="text"
+          placeholder="Nombre personalizado"
+          autocomplete="off"
+        />
+
+        <button
+          id="addRed"
+          class="color-btn red"
+          title="Agregar al equipo rojo"
+        ></button>
+
+        <button
+          id="addBlue"
+          class="color-btn blue"
+          title="Agregar al equipo azul"
+        ></button>
+      </div>
+
+      <button id="updateOverlay" class="update-btn">
+        Actualizar overlay
+      </button>
+
+    </section>
+
+    <section class="team team-blue">
+      <h2>Equipo Azul</h2>
+      <div id="blueTeam" class="team-list"></div>
+    </section>
+
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'ParticipantFont';
+    src: url('../Assets/Noka-Bold-iF66e06b12a6732.woff2') format('woff2');
+    font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: transparent;
+  font-family: 'ParticipantFont';
+}
+
+.overlay-bar {
+  width: 760px;
+  height: 64px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.45);
+}
+
+.player-side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 26px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+}
+
+.red-side {
+  justify-content: center;
+  background: linear-gradient(90deg, #ff1616, #c90035);
+}
+
+.blue-side {
+  justify-content: center;
+  background: linear-gradient(90deg, #3134d9, #1b6dff);
+}
+
+.flag {
+  width: 34px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.35);
+}
+
+.blue-side .flag {
+  order: 1;
+}
+
+.blue-side span {
+  order: 1;
+}
+
+.player-side {
+  transition: opacity 0.35s ease, transform 0.35s ease, filter 0.35s ease;
+}
+
+.player-side.changing {
+  opacity: 0;
+  transform: translateY(-10px);
+  filter: blur(4px);
+}
