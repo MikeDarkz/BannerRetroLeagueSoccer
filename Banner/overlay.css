@@ -15,11 +15,10 @@ body {
 }
 
 .overlay-bar {
-  width: 1247px;
+  width: 1252px;
   height: 64px;
   display: flex;
   overflow: hidden;
-  border-radius: 18px;
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.45);
 }
 
